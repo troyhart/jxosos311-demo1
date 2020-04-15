@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Say hello to the last person to state their name.
+ */
 @RestController
 @RequestMapping("/")
 public class HelloController {
