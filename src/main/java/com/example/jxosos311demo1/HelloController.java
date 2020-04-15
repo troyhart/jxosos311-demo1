@@ -20,6 +20,6 @@ public class HelloController {
 
     @GetMapping
     public String hello() {
-        return "Hello " + name == null ? "kind sir!" : name;
+        return "Well, howdy " + name == null ? "kind sir!" : name;
     }
 }
