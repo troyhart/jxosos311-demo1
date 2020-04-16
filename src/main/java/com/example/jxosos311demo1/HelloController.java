@@ -23,7 +23,7 @@ public class HelloController {
 
     @GetMapping
     public String hello() {
-        String greeting = "Well, howdy " + (name == null ? "kind sir!" : name);
+        String greeting = "Hello " + (name == null ? "kind sir!" : name);
         return greeting;
     }
 }
