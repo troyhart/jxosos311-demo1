@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     private String name;
 
-    @PutMapping("/name/{name}")
+    @PutMapping("/names/{name}")
     public void stateYourName(@PathVariable String name) {
         Assert.hasText(name, "null/blank name");
         this.name = name;
@@ -23,6 +23,7 @@ public class HelloController {
 
     @GetMapping
     public String hello() {
-        return "Well, howdy " + name == null ? "kind sir!" : name;
+        String greeting = "Well, howdy " + (name == null ? "kind sir!" : name);
+        return greeting;
     }
 }
