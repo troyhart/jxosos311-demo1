@@ -1,0 +1,240 @@
+
+Showing logs for build [32mtroyhart-jxosos311-demo1-pr-2-p-rf2ff-3[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-fdnkl[0m
+{"level":"warn","ts":1586995904.5059268,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586995904.5068355,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mtroyhart-jxosos311-demo1-pr-2-p-rf2ff-3[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-szlc9[0m
+{"level":"warn","ts":1586995905.8363152,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1586995905.8392947,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mtroyhart-jxosos311-demo1-pr-2-p-rf2ff-3[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mtroyhart-jxosos311-demo1-pr-2-p-rf2ff-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-troyhart-jxosos311-demo1-pr-2-p-rf2ff-4gxkk[0m
+{"level":"warn","ts":1586995915.1588848,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586995916.0672328,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/********/**osos311-demo1.git @ master in path /workspace/source"}
+
+Showing logs for build [32mtroyhart-jxosos311-demo1-pr-2-p-rf2ff-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:14833fc517514857defa81825da0ef8b5bb68c56,2:6b667eb4a96721f066216151e1de6ace04147116
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow 6b667eb4a96721f066216151e1de6ace04147116: 14833fc517514857defa81825da0ef8b5bb68c56:
+DEBUG: ran git fetch --unshallow origin 6b667eb4a96721f066216151e1de6ace04147116: 14833fc517514857defa81825da0ef8b5bb68c56: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard 14833fc517514857defa81825da0ef8b5bb68c56
+DEBUG: ran git reset --hard 14833fc517514857defa81825da0ef8b5bb68c56 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge 6b667eb4a96721f066216151e1de6ace04147116
+DEBUG: ran git merge 6b667eb4a96721f066216151e1de6ace04147116 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e 14833fc517514857defa81825da0ef8b5bb68c56..HEAD
+Merged SHA 6b667eb4a96721f066216151e1de6ace04147116 with commit message 'bug fix' into base branch master
+Merged SHA 72222b6c2a36b77b61d76afda78f98c9645da868 with commit message 'added documentation' into base branch master
+Merged SHA cfdd58854aa81c29a84d2da96f2706122424b224 with commit message 'a little hillbilly' into base branch master
+Merged SHA 3c39671691e5be21f448fed917aa398d1454a6e0 with commit message 'Added support for recording name.' into base branch master
+
+Showing logs for build [32mtroyhart-jxosos311-demo1-pr-2-p-rf2ff-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-set-version[0m
+Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.example:**osos311-demo1 >---------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- versions-maven-plugin:2.7:set (default-cli) @ **osos311-demo1 ---
+[INFO] Searching for local aggregator root...
+[INFO] Local aggregation root: /workspace/source
+[INFO] Processing change of com.example:**osos311-demo1:0.0.1-SNAPSHOT -> 0.0.0-SNAPSHOT-PR-2-3
+[INFO] Processing com.example:**osos311-demo1
+[INFO]     Updating project com.example:**osos311-demo1
+[INFO]         from version 0.0.1-SNAPSHOT to 0.0.0-SNAPSHOT-PR-2-3
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  26.809 s
+[INFO] Finished at: 2020-04-16T00:12:32Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32mtroyhart-jxosos311-demo1-pr-2-p-rf2ff-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-mvn-install[0m
+Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.example:**osos311-demo1 >---------------------
+[INFO] Building demo 0.0.0-SNAPSHOT-PR-2-3
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ **osos311-demo1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ **osos311-demo1 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /workspace/source/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ **osos311-demo1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /workspace/source/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ **osos311-demo1 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /workspace/source/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ **osos311-demo1 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.**osos311demo1.DemoApplicationTests
+00:13:12.010 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+00:13:12.102 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+00:13:12.312 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.**osos311demo1.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+00:13:12.421 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.**osos311demo1.DemoApplicationTests], using SpringBootContextLoader
+00:13:12.486 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.**osos311demo1.DemoApplicationTests]: class path resource [com/example/**osos311demo1/DemoApplicationTests-context.xml] does not exist
+00:13:12.487 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.**osos311demo1.DemoApplicationTests]: class path resource [com/example/**osos311demo1/DemoApplicationTestsContext.groovy] does not exist
+00:13:12.487 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.**osos311demo1.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+00:13:12.489 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.**osos311demo1.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:13:12.715 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.**osos311demo1.DemoApplicationTests]
+00:13:13.018 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/workspace/source/target/classes/com/example/**osos311demo1/DemoApplication.class]
+00:13:13.120 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.**osos311demo1.DemoApplication for test class com.example.**osos311demo1.DemoApplicationTests
+00:13:13.588 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.**osos311demo1.DemoApplicationTests]: using defaults.
+00:13:13.590 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+00:13:13.689 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+00:13:13.695 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+00:13:13.695 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4f2b503c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@bae7dc0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@209da20d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@e15b7e8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1b2abca6, org.springframework.test.context.event.EventPublishingTestExecutionListener@6392827e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2ed2d9cb, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@d5b810e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@43dac38f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@342c38f8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@c88a337]
+00:13:13.705 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@194bcebf testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@17497425 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.**osos311demo1.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7ee955a8, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6ac13091, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4b14c583, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1d119efb], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+00:13:13.918 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.6.RELEASE)
+
+2020-04-16 00:13:15.394  INFO 65 --- [           main] c.e.**osos311demo1.DemoApplicationTests  : Starting DemoApplicationTests on ********-**osos311-demo1-pr-2-p-rf2ff-3-from-build-pack-qhcxx-p with PID 65 (started by root in /workspace/source)
+2020-04-16 00:13:15.397  INFO 65 --- [           main] c.e.**osos311demo1.DemoApplicationTests  : No active profile set, falling back to default profiles: default
+2020-04-16 00:13:30.099  INFO 65 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 00:13:33.416  INFO 65 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-16 00:13:33.595  INFO 65 --- [           main] c.e.**osos311demo1.DemoApplicationTests  : Started DemoApplicationTests in 19.586 seconds (JVM running for 24.81)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.621 s - in com.example.**osos311demo1.DemoApplicationTests
+2020-04-16 00:13:34.592  INFO 65 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ **osos311-demo1 ---
+[INFO] Building jar: /workspace/source/target/**osos311-demo1-0.0.0-SNAPSHOT-PR-2-3.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.6.RELEASE:repackage (repackage) @ **osos311-demo1 ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ **osos311-demo1 ---
+[INFO] Installing /workspace/source/target/**osos311-demo1-0.0.0-SNAPSHOT-PR-2-3.jar to /home/jenkins/.mvnrepository/com/example/**osos311-demo1/0.0.0-SNAPSHOT-PR-2-3/**osos311-demo1-0.0.0-SNAPSHOT-PR-2-3.jar
+[INFO] Installing /workspace/source/pom.xml to /home/jenkins/.mvnrepository/com/example/**osos311-demo1/0.0.0-SNAPSHOT-PR-2-3/**osos311-demo1-0.0.0-SNAPSHOT-PR-2-3.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:05 min
+[INFO] Finished at: 2020-04-16T00:13:43Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32mtroyhart-jxosos311-demo1-pr-2-p-rf2ff-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-skaffold-version[0m
+v1.0.1
+
+Showing logs for build [32mtroyhart-jxosos311-demo1-pr-2-p-rf2ff-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Resolved base name openjdk:8-jdk-slim to openjdk:8-jdk-slim 
+[36mINFO[0m[0000] Using dockerignore file: /workspace/source/.dockerignore 
+[36mINFO[0m[0000] Resolved base name openjdk:8-jdk-slim to openjdk:8-jdk-slim 
+[36mINFO[0m[0000] Retrieving image manifest openjdk:8-jdk-slim 
+[36mINFO[0m[0001] Retrieving image manifest openjdk:8-jdk-slim 
+[36mINFO[0m[0002] Built cross stage deps: map[]                
+[36mINFO[0m[0002] Retrieving image manifest openjdk:8-jdk-slim 
+[36mINFO[0m[0003] Retrieving image manifest openjdk:8-jdk-slim 
+[36mINFO[0m[0003] cmd: EXPOSE                                  
+[36mINFO[0m[0003] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0003] Resolving srcs [pom.xml target/lib*]...      
+end of resolve sources
+[36mINFO[0m[0003] Checking for cached layer docker-registry.default.svc.cluster.local:5000/todo/cache:f2620c50ae39163330c85c96747272aaaffdab0b0d36c8e37a48b576b0673a74... 
+[36mINFO[0m[0004] No cached layer found for cmd COPY pom.xml target/lib* /opt/lib/ 
+[36mINFO[0m[0004] Resolving srcs [target/*.jar]...             
+end of resolve sources
+[36mINFO[0m[0004] Unpacking rootfs as cmd COPY pom.xml target/lib* /opt/lib/ requires it. 
+[36mINFO[0m[0022] Taking snapshot of full filesystem...        
+[36mINFO[0m[0022] Resolving paths                              
+[36mINFO[0m[0024] ENV PORT 8080                                
+[36mINFO[0m[0024] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0024] ENV CLASSPATH /opt/lib                       
+[36mINFO[0m[0024] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0024] EXPOSE 8080                                  
+[36mINFO[0m[0024] cmd: EXPOSE                                  
+[36mINFO[0m[0024] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0024] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0024] Resolving srcs [pom.xml target/lib*]...      
+end of resolve sources
+[36mINFO[0m[0024] COPY pom.xml target/lib* /opt/lib/           
+[36mINFO[0m[0024] Resolving srcs [pom.xml target/lib*]...      
+end of resolve sources
+[36mINFO[0m[0024] Resolving paths                              
+[36mINFO[0m[0024] Taking snapshot of files...                  
+[36mINFO[0m[0024] Resolving srcs [target/*.jar]...             
+[36mINFO[0m[0024] Pushing layer docker-registry.default.svc.cluster.local:5000/todo/cache:f2620c50ae39163330c85c96747272aaaffdab0b0d36c8e37a48b576b0673a74 to cache now 
+end of resolve sources
+[36mINFO[0m[0024] COPY target/*.jar /opt/app.jar               
+[36mINFO[0m[0024] Resolving srcs [target/*.jar]...             
+end of resolve sources
+[36mINFO[0m[0024] Resolving paths                              
+[36mINFO[0m[0024] Taking snapshot of files...                  
+[36mINFO[0m[0026] WORKDIR /opt                                 
+[36mINFO[0m[0026] cmd: workdir                                 
+[36mINFO[0m[0026] Changed working directory to /opt            
+[36mINFO[0m[0026] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0026] CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "app.jar"] 
+[36mINFO[0m[0026] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0026] Pushing layer docker-registry.default.svc.cluster.local:5000/todo/cache:bc0d783cb15b1f543251d523ff0dd9e4f3174f81bcd03583e128241bc1bef005 to cache now 
+[33mWARN[0m[0029] error uploading layer to cache: failed to push to destination docker-registry.default.svc.cluster.local:5000/todo/cache:f2620c50ae39163330c85c96747272aaaffdab0b0d36c8e37a48b576b0673a74: UNKNOWN: unknown error; map[Code:ImageStream:Unknown Err:map[ErrStatus:map[code:404 details:map[kind:namespaces name:todo] message:namespaces "todo" not found metadata:map[] reason:NotFound status:Failure]] Message:CreateImageStreamMapping: error creation of todo/cache ImageStreamMapping] 
+
+Showing logs for build [32mtroyhart-jxosos311-demo1-pr-2-p-rf2ff-3[0m stage [32mfrom-build-pack[0m and container [32mstep-postbuild-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mtroyhart-jxosos311-demo1-pr-2-p-rf2ff-3[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-make-preview[0m
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-2-3/" Chart.yaml
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-2-3/" ../*/Chart.yaml
+sed -i -e "s|repository:.*|repository: docker-registry.default.svc.cluster.local:5000\/********\/**osos311-demo1|" values.yaml
+sed -i -e "s/tag:.*/tag: 0.0.0-SNAPSHOT-PR-2-3/" values.yaml
+echo "  version: 0.0.0-SNAPSHOT-PR-2-3" >> requirements.yaml
+** step helm build
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+
+Showing logs for build [32mtroyhart-jxosos311-demo1-pr-2-p-rf2ff-3[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-preview[0m
+Creating a preview
+Found commit author match for: ******** with email address: thart@myriad.com
+expose:
+  Annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+  config:
+    domain: dxops.myriad.com
+    exposer: Ingress
+    http: "true"
+preview:
+  image:
+    repository: docker-registry.default.svc.cluster.local:5000/********/**osos311-demo1
+    tag: 0.0.0-SNAPSHOT-PR-2-3
+
+WARNING: Job expose has not yet terminated for helm hook phase post-upgrade due to: job expose never terminated so removing it anyway
+route.route.openshift.io "**osos311-demo1" deleted
+WARNING: Could not find the service URL in namespace **-********-**osos311-demo1-pr-2 for names **osos311-demo1, preview, **-********-**osos311-demo1-pr-2-preview, preview-**osos311-demo1: the server could not find the requested resource (get services.serving.knative.dev preview-**osos311-demo1)
+Updating PipelineActivities ********-**osos311-demo1-pr-2-3 which has status Running
