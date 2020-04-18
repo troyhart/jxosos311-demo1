@@ -30,6 +30,6 @@ public class HelloController {
     public String hello() {
         String greeting = "Hello " + (name == null ? "kind sir!" : name);
         LOGGER.info("Sending greeting: " + greeting);
-        return greeting;
+        return greeting.toUpperCase();
     }
 }
