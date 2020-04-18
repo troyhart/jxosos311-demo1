@@ -12,7 +12,7 @@
 	<artifactId>jxosos311-demo1</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<name>demo</name>
-	<description>Simple Spring Boot application to help demonstrate jx</description>
+	<description>Simple Spring Boot application to help demonstrate jx.</description>
 
 	<properties>
 		<java.version>1.8</java.version>
