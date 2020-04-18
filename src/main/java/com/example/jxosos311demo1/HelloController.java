@@ -32,4 +32,9 @@ public class HelloController {
         LOGGER.info("Sending greeting: " + greeting);
         return greeting.toUpperCase();
     }
+
+    @GetMapping("/name")
+    public String name() {
+        return name;
+    }
 }
