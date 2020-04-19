@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>jxosos311-demo1</artifactId>
-	<version>1.2</version>
+	<version>1.2.0</version>
 	<name>demo</name>
 	<description>Simple Spring Boot application to help demonstrate jx.</description>
 
