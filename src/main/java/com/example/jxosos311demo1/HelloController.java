@@ -25,6 +25,10 @@ public class HelloController {
     private String name;
     private LinkedList<String> history = new LinkedList<>();
 
+    /**
+     * 
+     * @param name the stated name
+     */
     @PutMapping("/names/{name}")
     public void stateYourName(@PathVariable String name) {
         Assert.hasText(name, "null/blank name");
@@ -36,6 +40,10 @@ public class HelloController {
         this.name = name;
     }
 
+    /**
+     * 
+     * @return the greeting for the last person who stated their name
+     */
     @GetMapping
     public String hello() {
         String greeting = "Hello " + (name == null ? "kind sir!" : name);
