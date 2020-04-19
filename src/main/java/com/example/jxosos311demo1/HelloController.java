@@ -43,6 +43,10 @@ public class HelloController {
         return greeting.toUpperCase();
     }
 
+    /**
+     * 
+     * @return the last stated name
+     */
     @GetMapping("/name")
     public String name() {
         return name;
@@ -54,7 +58,7 @@ public class HelloController {
      *  where n is equal to the given count.
      */
     @GetMapping("/names")
-    public List<String> history(@RequestParam(required = false, defaultValue = "-1") int count) {
+    public List<String> history(@RequestParam(required = false, defaultValue = "0") int count) {
         if (count > 0 && count < history.size()) {
             return history.stream().limit(count).collect(Collectors.toList());
         }
